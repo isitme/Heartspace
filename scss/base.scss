@@ -1,0 +1,78 @@
+$color-primary: #3AAD9C;
+
+$color-secondary: #3AAD98;
+$color-secondary-lite: rgba(237,247, 245, 39);
+
+$color-text: #324157;
+$color-button: #ED6D1C;
+$color-white: #FFFFFF;
+
+$font-primary: 'Sunflower', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+//Responsive Break point
+
+$bp-largest: 62.5em; //1000px
+$bp-large: 56.25em; // 900px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 800px
+$bp-x-small: 25em; // 400px
+
+
+.heading-secondary{
+  font-size: 3.2rem;
+  color: $color-secondary;
+  margin-bottom: 3.2rem;
+  @media only screen and (max-width: $bp-small){
+    font-size: 2.7rem;
+  }
+}
+
+.wave{
+  grid-column: full-start/ full-end;
+  padding-top: 9rem;
+  width: 100%;
+}
+
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-family: $font-secondary;
+  font-size: 62.5%; //1rem
+  @media only screen and (max-width: $bp-largest){
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-small){
+    font-size: 45%;
+  }
+
+}
+
+body{
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text;
+  line-height: 4.2rem;
+
+
+
+
+}
+
+.seasonal-header_container-main{
+  display: grid;
+  grid-template-columns: [full-start] minmax(1px, 57px) [center-start] repeat(12,  [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 57px) [full-end];
+  @media only screen and (max-width: $bp-small){
+    grid-template-columns: [full-start] minmax(1px, 30px) [center-start] repeat(12,  [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 30px) [full-end];
+  }
+  @media only screen and (max-width: $bp-small){
+    grid-template-columns: [full-start] minmax(1px, 16px) [center-start] repeat(12,  [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 16px) [full-end];
+  }
+}

@@ -1,0 +1,50 @@
+.works{
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-template-columns: inherit;
+  background-color: #EBF7F5;
+  padding: 14rem 0 9.7rem 0;
+
+  &__head{
+    grid-column: center-start / center-end;
+    margin-bottom: 9.1rem;
+  }
+  &__paragraph{
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+  }
+  &__paragraph-2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 4.2rem;
+  }
+  &__textbox{
+    grid-column: center-start / col-end 6;
+    ul{font-size: 1.8rem; line-height: 4.2rem;
+      @media only screen and (max-width: $bp-small){
+        padding-left: 2rem;
+      }
+    }
+    @media only screen and (max-width: $bp-medium){
+      grid-column: center-start / center-end;
+    }
+  }
+  &__img{
+    grid-column: col-start 8 / col-end 11;
+    @media only screen and (max-width: $bp-large){
+      grid-column: col-start 8 / col-end 12;
+    }
+    @media only screen and (max-width: $bp-medium){
+      grid-column: center-start / center-end;
+    }
+    img{
+      width: 100%;
+      filter: drop-shadow(4px 6px 29px rgba(0, 0, 0, 0.25));
+    }
+  }
+  p{
+    grid-column: center-start / center-end;
+    font-size: 1.8rem;
+    margin-top: 6.6rem;
+  }
+}

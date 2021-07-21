@@ -1,0 +1,16 @@
+.expect{
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-template-columns: inherit;
+  background-image: url("../img/henan-watermark.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 19.9rem;
+  @media only screen and (max-width: $bp-medium){
+    padding-bottom: 8rem;
+  }
+
+  &__img{
+    filter: drop-shadow(4px 6px 29px rgba(0, 0, 0, 0.25));
+  }
+}

@@ -1,0 +1,59 @@
+.seasonal-header_container{
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+
+  background-image: url("../img/henan-watermark.png");
+  background-position: center;
+  background-size: cover;
+}
+.seasonal-header{
+  display: grid;
+  grid-column: col-start 3/ col-end 10;
+  @media only screen and (max-width: $bp-large){
+    grid-column: center-start / center-end;
+  }
+  text-align: center;
+  padding: 6rem 0;
+
+  &__heading-primary{
+    font-size: 4.4rem;
+    color: $color-primary;
+    margin-bottom: 3.8rem;
+    font-family: $font-primary;
+    @media only screen and (max-width: $bp-small){
+      font-size: 3rem;
+    }
+    
+  }
+
+  &__1{
+    font-size: 2rem;
+    color: #354155;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2.9rem;
+    @media only screen and (max-width: $bp-small){
+      font-size: 1.7rem;
+      width: 100%;
+    }
+  }
+  &__2{
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 3rem;
+    @media only screen and (max-width: $bp-small){
+      font-size: 1.9rem;
+    }
+  }
+  &__button{
+    padding: 1.5rem 2.4rem;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: $color-button;
+    box-shadow: 0 .2rem 2rem rgba(0,0,0,.2);
+  }
+}

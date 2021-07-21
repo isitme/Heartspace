@@ -1,0 +1,63 @@
+.heading-secondary {
+  font-size: 3.2rem;
+  color: #3AAD98;
+  margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.7rem;
+  }
+}
+
+.wave {
+  grid-column: full-start/full-end;
+  padding-top: 9rem;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #324157;
+  line-height: 4.2rem;
+}
+
+.seasonal-header_container-main {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1px, 57px) [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 57px) [full-end];
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-header_container-main {
+    grid-template-columns: [full-start] minmax(1px, 30px) [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 30px) [full-end];
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-header_container-main {
+    grid-template-columns: [full-start] minmax(1px, 16px) [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 16px) [full-end];
+  }
+}
+
+/*# sourceMappingURL=base.css.map */

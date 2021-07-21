@@ -1,0 +1,476 @@
+.heading-secondary {
+  font-size: 3.2rem;
+  color: #3AAD98;
+  margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.7rem;
+  }
+}
+
+.wave {
+  grid-column: full-start/full-end;
+  padding-top: 9rem;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #324157;
+  line-height: 4.2rem;
+}
+
+.seasonal-header_container-main {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1px, 57px) [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 57px) [full-end];
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-header_container-main {
+    grid-template-columns: [full-start] minmax(1px, 30px) [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 30px) [full-end];
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-header_container-main {
+    grid-template-columns: [full-start] minmax(1px, 16px) [center-start] repeat(12, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(1px, 16px) [full-end];
+  }
+}
+
+.seasonal-header_container {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+  background-image: url("../img/henan-watermark.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.seasonal-header {
+  display: grid;
+  grid-column: col-start 3/col-end 10;
+  text-align: center;
+  padding: 6rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .seasonal-header {
+    grid-column: center-start/center-end;
+  }
+}
+.seasonal-header__heading-primary {
+  font-size: 4.4rem;
+  color: #3AAD9C;
+  margin-bottom: 3.8rem;
+  font-family: "Sunflower", sans-serif;
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-header__heading-primary {
+    font-size: 3rem;
+  }
+}
+.seasonal-header__1 {
+  font-size: 2rem;
+  color: #354155;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2.9rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-header__1 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+}
+.seasonal-header__2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-header__2 {
+    font-size: 1.9rem;
+  }
+}
+.seasonal-header__button {
+  padding: 1.5rem 2.4rem;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: #ED6D1C;
+  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.seasonal-cleanse {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+  background-color: #EBF7F5;
+  padding-top: 9rem;
+}
+.seasonal-cleanse__textbox {
+  grid-column: center-start/col-end 6;
+}
+@media only screen and (max-width: 50em) {
+  .seasonal-cleanse__textbox {
+    grid-column: center-start/center-end;
+    margin-bottom: 6rem;
+  }
+}
+.seasonal-cleanse__textbox p {
+  font-size: 1.8rem;
+}
+.seasonal-cleanse__img {
+  grid-column: col-start 8/full-end;
+  display: grid;
+  align-items: center;
+}
+@media only screen and (max-width: 50em) {
+  .seasonal-cleanse__img {
+    grid-column: center-start/center-end;
+    margin-bottom: 2rem;
+  }
+}
+.seasonal-cleanse__img img {
+  filter: drop-shadow(0px 6px 29px rgba(0, 0, 0, 0.25));
+  width: 90%;
+}
+
+.tow-seasons {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+  padding: 7.2rem 0 10.1rem 0;
+  position: relative;
+  background-color: #EBF7F5;
+}
+.tow-seasons__img-1, .tow-seasons__img-2 {
+  padding-top: 5.5rem;
+}
+.tow-seasons__img-1 img, .tow-seasons__img-2 img {
+  width: 100%;
+}
+.tow-seasons__heading {
+  grid-column: center-start/center-end;
+  padding: 10rem 0 10rem 0;
+  font-size: 2.3rem;
+  line-height: 4.2rem;
+  font-weight: 400;
+  color: #324157;
+}
+@media only screen and (max-width: 37.5em) {
+  .tow-seasons__heading {
+    padding: 5rem 0 5rem 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .tow-seasons__heading {
+    font-size: 1.9rem;
+  }
+}
+.tow-seasons__textbox-1 {
+  grid-column: col-start 2/col-end 5;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .tow-seasons__textbox-1 {
+    grid-column: col-start 1/col-end 5;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .tow-seasons__textbox-1 {
+    grid-column: center-start/center-end;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .tow-seasons__textbox-1 {
+    grid-column: center-start/center-end;
+    margin-bottom: 8rem;
+  }
+}
+.tow-seasons__textbox-1 img {
+  filter: drop-shadow(0.4rem 0.6rem 2.9rem rgba(0, 0, 0, 0.25));
+  width: 90%;
+  margin-top: 7.9rem;
+}
+@media only screen and (max-width: 50em) {
+  .tow-seasons__textbox-1 img {
+    grid-column: center-start/center-end;
+    margin-bottom: 3rem;
+  }
+}
+.tow-seasons__textbox-2 {
+  grid-column: col-start 8/col-end 11;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .tow-seasons__textbox-2 {
+    grid-column: col-start 8/col-end 12;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .tow-seasons__textbox-2 {
+    grid-column: center-start/center-end;
+  }
+}
+.tow-seasons__textbox-2 img {
+  filter: drop-shadow(-0.4rem 0.6rem 2.9rem rgba(0, 0, 0, 0.25));
+  width: 90%;
+  margin-top: 7.9rem;
+}
+.tow-seasons__text {
+  font-size: 1.8rem;
+  grid-column: center-start/center-end;
+  padding-top: 8.1rem;
+}
+
+.seasonal-who {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+  padding: 8.9rem 0 15.3rem 0;
+  background-image: url("../img/henan-watermark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.seasonal-who__paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 4.7rem;
+}
+.seasonal-who__textbox-1 {
+  grid-column: center-start/col-end 6;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 50em) {
+  .seasonal-who__textbox-1 {
+    grid-column: center-start/center-end;
+  }
+}
+.seasonal-who__textbox-1 ul {
+  margin-left: 5rem;
+}
+.seasonal-who__textbox-1 ul li {
+  padding: 0.5rem 0 0.5rem 0;
+}
+.seasonal-who__textbox-2 {
+  grid-column: col-start 7/center-end;
+  font-size: 1.8rem;
+  margin-top: 12rem;
+}
+@media only screen and (max-width: 50em) {
+  .seasonal-who__textbox-2 {
+    grid-column: center-start/center-end;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-who__textbox-2 ul {
+    padding-left: 2rem;
+  }
+}
+.seasonal-who__textbox-2 ul li {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 4.2rem;
+}
+.seasonal-who__img-1 {
+  grid-column: col-start 7/full-end;
+  margin: 6rem 0 7.9rem 0;
+  align-self: center;
+}
+.seasonal-who__img-1 img {
+  width: 80%;
+}
+@media only screen and (max-width: 50em) {
+  .seasonal-who__img-1 {
+    grid-column: center-start/center-end;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-who__img-1 {
+    margin: 6rem 0 0 0;
+  }
+}
+.seasonal-who__img-2 {
+  grid-column: center-start/col-end 4;
+  margin-top: 24.7rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .seasonal-who__img-2 {
+    grid-column: center-start/col-end 5;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .seasonal-who__img-2 {
+    display: none;
+  }
+}
+.seasonal-who__img-2 img {
+  width: 100%;
+}
+.seasonal-who__img-3 {
+  display: none;
+  margin-top: 6.7rem;
+}
+@media only screen and (max-width: 50em) {
+  .seasonal-who__img-3 {
+    display: block;
+  }
+}
+.seasonal-who__img-3 img {
+  width: 100%;
+}
+
+.works {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+  background-color: #EBF7F5;
+  padding: 14rem 0 9.7rem 0;
+}
+.works__head {
+  grid-column: center-start/center-end;
+  margin-bottom: 9.1rem;
+}
+.works__paragraph {
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+}
+.works__paragraph-2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 4.2rem;
+}
+.works__textbox {
+  grid-column: center-start/col-end 6;
+}
+.works__textbox ul {
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .works__textbox ul {
+    padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .works__textbox {
+    grid-column: center-start/center-end;
+  }
+}
+.works__img {
+  grid-column: col-start 8/col-end 11;
+}
+@media only screen and (max-width: 56.25em) {
+  .works__img {
+    grid-column: col-start 8/col-end 12;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .works__img {
+    grid-column: center-start/center-end;
+  }
+}
+.works__img img {
+  width: 100%;
+  filter: drop-shadow(4px 6px 29px rgba(0, 0, 0, 0.25));
+}
+.works p {
+  grid-column: center-start/center-end;
+  font-size: 1.8rem;
+  margin-top: 6.6rem;
+}
+
+.expect {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+  background-image: url("../img/henan-watermark.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 19.9rem;
+}
+@media only screen and (max-width: 50em) {
+  .expect {
+    padding-bottom: 8rem;
+  }
+}
+.expect__img {
+  filter: drop-shadow(4px 6px 29px rgba(0, 0, 0, 0.25));
+}
+
+.seasonal-banner {
+  grid-column: full-start/full-end;
+  text-align: center;
+  padding: 7.8rem 0 14.4rem 0;
+  display: grid;
+  grid-template-columns: inherit;
+  background-image: linear-gradient(107.64deg, rgba(32, 32, 32, 0.8) -1.02%, rgba(32, 32, 32, 0.8) 100%), url("../img/background-img.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.seasonal-banner__head {
+  text-align: center;
+  grid-column: center-start/center-end;
+  color: rgba(255, 255, 255, 0.94);
+}
+.seasonal-banner__registration {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.94);
+  grid-column: center-start/center-end;
+}
+.seasonal-banner__paragraph {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.9rem;
+  grid-column: center-start/center-end;
+  color: rgba(255, 255, 255, 0.94);
+}
+.seasonal-banner__paragraph-1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #ED6D19;
+}
+.seasonal-banner__paragraph-2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 60%;
+  display: inline-block;
+}
+@media only screen and (max-width: 37.5em) {
+  .seasonal-banner__paragraph-2 {
+    display: inline;
+  }
+}
+.seasonal-banner__btn {
+  grid-column: center-start/center-end;
+}
+
+/*# sourceMappingURL=main.css.map */

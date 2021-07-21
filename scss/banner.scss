@@ -1,0 +1,47 @@
+.seasonal-banner{
+  grid-column: full-start / full-end;
+  text-align: center;
+  padding: 7.8rem 0 14.4rem 0;
+  display: grid;
+  grid-template-columns: inherit;
+  background-image: linear-gradient(107.64deg, rgba(32, 32, 32, 0.8) -1.02%, rgba(32, 32, 32, 0.8) 100%),
+  url('../img/background-img.jpeg');
+  background-position: center;
+  background-size: cover;
+  &__head{
+    text-align: center;
+    grid-column: center-start / center-end;
+    color: rgba(255, 255, 255, 94%);
+  }
+
+  &__registration{
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 94%);
+    grid-column: center-start / center-end;
+  }
+  &__paragraph{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2.9rem;
+    grid-column: center-start / center-end;
+    color: rgba(255, 255, 255, 94%);
+    &-1{
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #ED6D19;
+    }
+    &-2{
+      font-size: 1.6rem;
+      font-weight: 400;
+      width: 60%;
+      display: inline-block;
+      @media only screen and (max-width: $bp-small){
+        display: inline;
+      }
+    }
+  }
+  &__btn{
+    grid-column: center-start / center-end;
+  }
+}

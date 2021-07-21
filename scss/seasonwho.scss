@@ -1,0 +1,88 @@
+.seasonal-who{
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: inherit;
+  padding: 8.9rem 0 15.3rem 0;
+  background-image: url("../img/henan-watermark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__paragraph{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 4.7rem;
+  }
+
+  &__textbox-1{
+    grid-column: center-start / col-end 6;
+    font-size: 1.8rem;
+    @media only screen and (max-width: $bp-medium){
+      grid-column: center-start / center-end;
+    }
+
+    ul{
+      margin-left: 5rem;
+      li{
+        padding: .5rem 0 .5rem 0;
+      }
+    }
+  }
+  &__textbox-2{
+    grid-column: col-start 7 / center-end;
+    font-size: 1.8rem;
+    margin-top: 12rem;
+    @media only screen and (max-width: $bp-medium){
+      grid-column: center-start / center-end;
+    }
+
+    ul{
+      @media only screen and (max-width: $bp-small){
+        padding-left: 2rem;
+      }
+      li{
+        padding: .5rem 0 .5rem 0;
+        line-height: 4.2rem;
+      }
+    }
+  }
+
+  &__img-1{
+    grid-column: col-start 7 / full-end;
+    margin: 6rem 0 7.9rem 0;
+    align-self: center;
+    img{width: 80%;}
+    @media only screen and (max-width: $bp-medium){
+      grid-column: center-start / center-end;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small){
+      margin: 6rem 0 0 0;
+    }
+  }
+  &__img-2{
+    grid-column: center-start / col-end 4;
+    margin-top: 24.7rem;
+
+    @media only screen and (max-width: $bp-large){
+      grid-column: center-start / col-end 5 ;
+    }
+    @media only screen and (max-width: $bp-medium){
+      display: none;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &__img-3{
+    display: none;
+    margin-top: 6.7rem;
+
+    @media only screen and (max-width: $bp-medium){
+      display: block;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
